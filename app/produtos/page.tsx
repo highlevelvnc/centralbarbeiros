@@ -2,7 +2,12 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import type { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Produtos | Central dos Barbeiros",
+  description: "Catálogo de produtos profissionais para barbearias na Região dos Lagos.",
+};
 import { ProductCard } from "@/components/ui/ProductCard";
 import { products, productCategories } from "@/lib/products";
 

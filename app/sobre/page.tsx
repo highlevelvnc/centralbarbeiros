@@ -165,9 +165,10 @@ export default function SobrePage() {
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
               Porque entendemos de barbearia. Não somos apenas uma distribuidora, somos parceiros que conhecem os desafios do dia a dia e trabalham para facilitar a vida dos barbeiros profissionais da Região dos Lagos.
             </p>
-            <p className="text-white text-xl font-semibold">
-              "Seu sucesso é o nosso sucesso."
-            </p>
+<p className="text-white text-xl font-semibold">
+  “Seu sucesso é o nosso sucesso.”
+</p>
+
           </motion.div>
         </div>
       </section>
