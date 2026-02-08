@@ -28,12 +28,15 @@ export function Testimonials() {
   return (
     <section className="py-20 bg-dark relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(45deg, #D4AF37 25%, transparent 25%, transparent 75%, #D4AF37 75%, #D4AF37),
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `linear-gradient(45deg, #D4AF37 25%, transparent 25%, transparent 75%, #D4AF37 75%, #D4AF37),
                            linear-gradient(45deg, #D4AF37 25%, transparent 25%, transparent 75%, #D4AF37 75%, #D4AF37)`,
-          backgroundSize: '60px 60px',
-          backgroundPosition: '0 0, 30px 30px'
-        }} />
+            backgroundSize: "60px 60px",
+            backgroundPosition: "0 0, 30px 30px",
+          }}
+        />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -52,7 +55,8 @@ export function Testimonials() {
             <span className="text-gold"> Barbeiros</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Confira a opinião de profissionais que já confiam na Central dos Barbeiros para abastecer suas barbearias.
+            Confira a opinião de profissionais que já confiam na Central dos
+            Barbeiros para abastecer suas barbearias.
           </p>
           <div className="w-24 h-1 bg-gold mx-auto mt-6" />
         </motion.div>
@@ -68,15 +72,15 @@ export function Testimonials() {
               className="bg-dark-secondary border border-gold/10 rounded-lg p-8 hover:border-gold/30 transition-all relative group"
             >
               <Quote className="absolute top-6 right-6 w-12 h-12 text-gold/10 group-hover:text-gold/20 transition-colors" />
-              
+
               <div className="flex mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
+                {Array.from({ length: testimonial.rating }).map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-gold fill-gold" />
                 ))}
               </div>
 
               <p className="text-gray-300 mb-6 leading-relaxed relative z-10">
-                "{testimonial.text}"
+                “{testimonial.text}”
               </p>
 
               <div className="border-t border-gold/10 pt-4">
